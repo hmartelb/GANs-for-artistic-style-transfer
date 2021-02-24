@@ -1,14 +1,15 @@
 # Using GANs for Artistic Style Transfer
 Final project for the Machine Learning course at Tsinghua University, Fall 2020
 
+
+
 # Introduction 
 
 The purpose of this project is to generate Claude Monet style images from real
 photos using Generative Adversarial Networks, following the [Kaggle Competition
-"I’m Something of a Painter Myself"](https://www.kaggle.com/c/gan-getting-started). We explored various GAN architectures
-applied to the style transfer problem, and select CycleGAN, MUNIT and UGATIT
-due to their impressive performance for similar applications. Also, we study the
-effect of data augmentation and compare the architecture’s benefits and negatives.
+"I’m Something of a Painter Myself"](https://www.kaggle.com/c/gan-getting-started). 
+
+We explored various GAN architectures applied to the style transfer problem, and select CycleGAN, MUNIT and UGATIT due to their impressive performance for similar applications. 
 
 # Quick start
 
@@ -34,6 +35,8 @@ The `train.py` script contains the training loop, which is shared by the 3 model
 (venv) $ python train.py
 ```
 
+You can also pass some arguments:
+
 ```
 (venv) $ python train.py -- 
                          --
@@ -42,22 +45,31 @@ The `train.py` script contains the training loop, which is shared by the 3 model
 ```
 > Note: All the arguments are optional.
 
-# Network architectures
+<!-- # Network architectures
 
 ## CycleGAN
 
-![CycleGAN Diagram](https://github.com/hmartelb/GANs-for-artistic-style-transfer/docs/figures/CycleGAN.png)
+<img src="docs/figures/CycleGAN.png">
 
 ## MUNIT
 
+<img src="docs/figures/MUNIT.png">
+
 ## U-GAT-IT
 
+<img src="docs/figures/UGATIT.png"> -->
 
 # Dataset
 
 # Results
 
-
+| Original | CycleGAN | MUNIT | UGATIT |
+|:---:|:---:|:---:|:---:|
+|<img src="docs/figures/Results/Original/1.jpg">|<img src="docs/figures/Results/CycleGAN/1.jpg">|<img src="docs/figures/Results/MUNIT/1.jpg">|<img src="docs/figures/Results/UGATIT/1.jpg">| 
+|<img src="docs/figures/Results/Original/2.jpg">|<img src="docs/figures/Results/CycleGAN/2.jpg">|<img src="docs/figures/Results/MUNIT/2.jpg">|<img src="docs/figures/Results/UGATIT/2.jpg">| 
+|<img src="docs/figures/Results/Original/3.jpg">|<img src="docs/figures/Results/CycleGAN/3.jpg">|<img src="docs/figures/Results/MUNIT/3.jpg">|<img src="docs/figures/Results/UGATIT/3.jpg">| 
+|<img src="docs/figures/Results/Original/4.jpg">|<img src="docs/figures/Results/CycleGAN/4.jpg">|<img src="docs/figures/Results/MUNIT/4.jpg">|<img src="docs/figures/Results/UGATIT/4.jpg">| 
+|<img src="docs/figures/Results/Original/5.jpg">|<img src="docs/figures/Results/CycleGAN/5.jpg">|<img src="docs/figures/Results/MUNIT/5.jpg">|<img src="docs/figures/Results/UGATIT/5.jpg">| 
 
 <!-- # Contact 
 

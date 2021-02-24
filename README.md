@@ -61,7 +61,20 @@ You can also pass some arguments:
 
 # Dataset
 
+The [Kaggle competition](https://www.kaggle.com/c/gan-getting-started) provides a dataset composed of 300 paintings from Claude Monet and 7000 real photos. Some randomly selected examples from the dataset are displayed below:
+
+|<img src="docs/figures/Dataset/Monet/1.jpg">|<img src="docs/figures/Dataset/Monet/2.jpg">|<img src="docs/figures/Dataset/Monet/3.jpg">|<img src="docs/figures/Dataset/Monet/4.jpg">|<img src="docs/figures/Dataset/Monet/5.jpg">|
+|:---:|:---:|:---:|:---:|:---:|
+|<img src="docs/figures/Dataset/Real/1.jpg">|<img src="docs/figures/Dataset/Real/2.jpg">|<img src="docs/figures/Dataset/Real/3.jpg">|<img src="docs/figures/Dataset/Real/4.jpg">|<img src="docs/figures/Dataset/Real/5.jpg">|
+
+> Top row: Monet paintings. Bottom row: Real images
+
+The training data is provided in `JPEG` format and the image dimensions are 256x256x3, since they
+are in RGB color space. Alternatively, the dataset is also in Tensorflow `TFRecords` format. The first can be used to manually inspect the data, whereas the second one is preferred for GPU and TPU training, as it offers a significant improvement in data throughput.
+
 # Results
+
+
 
 | Original | CycleGAN | MUNIT | UGATIT |
 |:---:|:---:|:---:|:---:|

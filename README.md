@@ -38,12 +38,13 @@ The `train.py` script contains the training loop, which is shared by the 3 model
 You can also pass some arguments:
 
 ```
-(venv) $ python train.py -- 
-                         --
-                         --
-                         --
+(venv) $ python train.py --architecture [ cyclegan / munit / ugatit ] 
+                         --epochs <number>
+                         --batch_size <number>
+                         --gen_lr <float or string>
+                         --disc_lr <float or string>
 ```
-> Note: All the arguments are optional.
+> Note: All the arguments are optional. Please refer to `train.py` for a full list of arguments or run with the -h/--help flag.
 
 <!-- # Network architectures
 

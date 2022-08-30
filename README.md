@@ -11,6 +11,8 @@ photos using Generative Adversarial Networks, following the [Kaggle Competition
 
 We explored various GAN architectures applied to the style transfer problem, and select CycleGAN, MUNIT and UGATIT due to their impressive performance for similar applications. 
 
+![UGATIT](docs/figures/UGATIT.PNG)
+
 # Quick start
 
 ## Environment setup
